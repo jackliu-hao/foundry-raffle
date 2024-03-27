@@ -1,66 +1,21 @@
-## Foundry
+# 提供一个公开、公平的抽奖合约
+## 关于我
+代码提供了一种可证明的，公开的抽奖合约
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## 它能做什么？
+1、用户可以通过购买一张彩票来参加抽奖
+    1. 彩票的费用在抽奖的时候全部给赢家
+2、 经过X时间的周期，彩票将自动抽出一个赢家
+    1. 这将通过编程的方式实现
+3、使用 ChainkLink VRF & Chainlink Automation
+    1.ChainkLink VRF --> 生成随机数
+    2.Chainlink Automation --> 设置彩票自动抽奖的时间周期
+## 单词解释
+raffle 抽奖
+lottery 彩票
 
-Foundry consists of:
+## 合约地址
+https://sepolia.arbiscan.io/address/0x0d3b9c4ae2fe44187e5c914ffdc548bf0f524258
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+## todo 
+学习 chiankLink VRF & Chainlink Automation 
